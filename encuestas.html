@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="contenedor">
-        <h1>P.E.S.</h1>
+        <h1 id="titulo-pes">P.E.S.</h1>
         <section class="encuestas">
             <article class="saludfisica">
                 <fieldset>
@@ -18,8 +18,8 @@
                     <form action="#">
                         <h3>ALIMENTACIÓN</h3>
                         <p id="legenda">Responde a cada pregunta según se aplique a tu condición actual</p>
-                        <label for="">1. ¿Crees que tu alimentación es saludable?</label>
-                        <select name="" id="">
+                        <label for="alimentacionsaludable">1. ¿Crees que tu alimentación es saludable?</label>
+                        <select id="alimentacionsaludable">
                             <option value="0" selected>Seleccione una opción</option>
                             <option value="siempre">Siempre</option>
                             <option value="aveces">A veces</option>
@@ -28,7 +28,7 @@
                         </select>
                         <!-- segunda pregunta -->
                         <label for="">2. ¿Mantienes un consumo bajo en grasas?</label>
-                        <select name="" id="">
+                        <select id="">
                             <option value="0" selected>Seleccione una opción</option>
                             <option value="siempre">Siempre</option>
                             <option value="aveces">A veces</option>
@@ -37,7 +37,7 @@
                         </select>
                         <!-- tercer pregunta -->
                         <label for="">3. ¿Comes vegetales frescos diariamente?</label>
-                        <select name="" id="">
+                        <select id="">
                             <option value="0" selected>Seleccione una opción</option>
                             <option value="siempre">Siempre</option>
                             <option value="aveces">A veces</option>
@@ -46,7 +46,7 @@
                         </select>
                         <!-- cuarta pregunta -->
                         <label for="">4. ¿Comes de forma saludable aún cuando lo hagas fuera de casa?</label>
-                        <select name="" id="">
+                        <select id="">
                             <option value="0" selected>Seleccione una opción</option>
                             <option value="siempre">Siempre</option>
                             <option value="aveces">A veces</option>
@@ -55,7 +55,7 @@
                         </select>
                         <!-- quinta pregunta -->
                         <label for="">5. ¿Comes alimentos hervidos o asados en lugar de fritos?</label>
-                        <select name="" id="">
+                        <select id="">
                             <option value="0" selected>Seleccione una opción</option>
                             <option value="siempre">Siempre</option>
                             <option value="aveces">A veces</option>
@@ -151,7 +151,10 @@
                         <label for="no">No</label> <br>
                     </form>
                 </fieldset>
-            </article>
+            </article> <br>
+
+            <!-- aqui empieza salud psicosocial -->
+
             <article class="saludpsico">
                 <fieldset>
                     <legend>SALUD PSICOSOCIAL</legend>
@@ -241,53 +244,59 @@
                         <p id="legenda">Responde a cada pregunta según se aplique a tu condición actual</p>
                         <!-- pregunta 11 -->
                         <label for="11-violacion">11. ¿Alguien  te ha forzado a tener contacto sexual o a tener relaciones sexuales? </label> <br> <br>
-                        <input type="radio" name="11-violacion" id="11-violacion" value="1" checked><label for="11-violacion">1 - NUNCA</label> <br>
-                        <input type="radio" name="11-violacion" id="11-violacion" value="2"><label for="11-violacion">2 - POCAS VECES</label> <br>
-                        <input type="radio" name="11-violacion" id="11-violacion" value="3"><label for="11-violacion">3 - A VECES</label> <br>
-                        <input type="radio" name="11-violacion" id="11-violacion" value="4"><label for="11-violacion">4 - MUCHAS VECES</label> <br>
-                        <input type="radio" name="11-violacion" id="11-violacion" value="5"><label for="11-violacion">5 - SIEMPRE</label> <br> <br>
+                        <input type="radio" name="11-violacion" id="11-violacion" value="1" checked><label for="11-violacion">1 - SI</label> <br>
+                        <input type="radio" name="11-violacion" id="11-violacion" value="2"><label for="11-violacion">2 - NO</label> <br><br>
+
                         <!-- pregunta 12 -->
                         <label for="12-cuchillo">12. ¿Te han amenazado con un arma (cuchillo, pistola, picahielos, palos, etc.)?</label> <br> <br>
-                        <input type="radio" name="12-cuchillo" id="12-cuchillo" value="1" checked><label for="12-cuchillo">1 - NUNCA</label> <br>
-                        <input type="radio" name="12-cuchillo" id="12-cuchillo" value="2"><label for="12-cuchillo">2 - POCAS VECES</label> <br>
-                        <input type="radio" name="12-cuchillo" id="12-cuchillo" value="3"><label for="12-cuchillo">3 - A VECES</label> <br>
+                        <input type="radio" name="12-cuchillo" id="12-cuchillo" value="1" checked><label for="12-cuchillo">1 - SI</label> <br>
+                        <input type="radio" name="12-cuchillo" id="12-cuchillo" value="2"><label for="12-cuchillo">2 - NO</label> <br> <br>
+                        <!-- <input type="radio" name="12-cuchillo" id="12-cuchillo" value="3"><label for="12-cuchillo">3 - A VECES</label> <br>
                         <input type="radio" name="12-cuchillo" id="12-cuchillo" value="4"><label for="12-cuchillo">4 - MUCHAS VECES</label> <br>
-                        <input type="radio" name="12-cuchillo" id="12-cuchillo" value="5"><label for="12-cuchillo">5 - SIEMPRE</label> <br> <br>
+                        <input type="radio" name="12-cuchillo" id="12-cuchillo" value="5"><label for="12-cuchillo">5 - SIEMPRE</label> <br> <br> -->
                         <!-- pregunta 13 -->
                         <label for="13-pareja">13. ¿Tu pareja te ha humillado, insultado, golpeado o amenazado?</label> <br> <br>
-                        <input type="radio" name="13-pareja" id="13-pareja" value="1" checked><label for="13-pareja">1 - NUNCA</label> <br>
-                        <input type="radio" name="13-pareja" id="13-pareja" value="2"><label for="13-pareja">2 - POCAS VECES</label> <br>
-                        <input type="radio" name="13-pareja" id="13-pareja" value="3"><label for="13-pareja">3 - A VECES</label> <br>
+                        <input type="radio" name="13-pareja" id="13-pareja" value="1" checked><label for="13-pareja">1 - SI</label> <br>
+                        <input type="radio" name="13-pareja" id="13-pareja" value="2"><label for="13-pareja">2 - NO</label> <br> <br>
+                        <!-- <input type="radio" name="13-pareja" id="13-pareja" value="3"><label for="13-pareja">3 - A VECES</label> <br>
                         <input type="radio" name="13-pareja" id="13-pareja" value="4"><label for="13-pareja">4 - MUCHAS VECES</label> <br>
-                        <input type="radio" name="13-pareja" id="13-pareja" value="5"><label for="13-pareja">5 - SIEMPRE</label> <br> <br>
+                        <input type="radio" name="13-pareja" id="13-pareja" value="5"><label for="13-pareja">5 - SIEMPRE</label> <br> <br> -->
                         <!-- pregunta 14 -->
                         <label for="14-golpessup">14. ¿Has recibido golpes, insultos y humillación por parte de compañeros o superiores?</label> <br> <br>
-                        <input type="radio" name="14-golpessup" id="14-golpessup" value="1" checked><label for="14-golpessup">1 - NUNCA</label> <br>
-                        <input type="radio" name="14-golpessup" id="14-golpessup" value="2"><label for="14-golpessup">2 - POCAS VECES</label> <br>
-                        <input type="radio" name="14-golpessup" id="14-golpessup" value="3"><label for="14-golpessup">3 - A VECES</label> <br>
+                        <input type="radio" name="14-golpessup" id="14-golpessup" value="1" checked><label for="14-golpessup">1 - SI</label> <br>
+                        <input type="radio" name="14-golpessup" id="14-golpessup" value="2"><label for="14-golpessup">2 - NO</label> <br> <br>
+                        <!-- <input type="radio" name="14-golpessup" id="14-golpessup" value="3"><label for="14-golpessup">3 - A VECES</label> <br>
                         <input type="radio" name="14-golpessup" id="14-golpessup" value="4"><label for="14-golpessup">4 - MUCHAS VECES</label> <br>
-                        <input type="radio" name="14-golpessup" id="14-golpessup" value="5"><label for="14-golpessup">5 - SIEMPRE</label> <br> <br>
+                        <input type="radio" name="14-golpessup" id="14-golpessup" value="5"><label for="14-golpessup">5 - SIEMPRE</label> <br> <br> -->
                         <!-- pregunta 15 -->
                         <label for="15-golpesfam">15. ¿Has recibido insultos, golpes, insultos y humillacion por parte de un familiar?</label> <br> <br>
-                        <input type="radio" name="15-golpesfam" id="15-golpesfam" value="1" checked><label for="15-golpesfam">1 - NUNCA</label> <br>
-                        <input type="radio" name="15-golpesfam" id="15-golpesfam" value="2"><label for="15-golpesfam">2 - POCAS VECES</label> <br>
-                        <input type="radio" name="15-golpesfam" id="15-golpesfam" value="3"><label for="15-golpesfam">3 - A VECES</label> <br>
+                        <input type="radio" name="15-golpesfam" id="15-golpesfam" value="1" checked><label for="15-golpesfam">1 - SI</label> <br>
+                        <input type="radio" name="15-golpesfam" id="15-golpesfam" value="2"><label for="15-golpesfam">2 - NO</label> <br> <br>
+                        <!-- <input type="radio" name="15-golpesfam" id="15-golpesfam" value="3"><label for="15-golpesfam">3 - A VECES</label> <br>
                         <input type="radio" name="15-golpesfam" id="15-golpesfam" value="4"><label for="15-golpesfam">4 - MUCHAS VECES</label> <br>
-                        <input type="radio" name="15-golpesfam" id="15-golpesfam" value="5"><label for="15-golpesfam">5 - SIEMPRE</label> <br> <br>
+                        <input type="radio" name="15-golpesfam" id="15-golpesfam" value="5"><label for="15-golpesfam">5 - SIEMPRE</label> <br> <br> -->
                         <!-- pregunta 16 -->
                         <label for="16-famasalt">16. ¿Alguno de tus familiares ha sido lesionado por ser asaltado?</label> <br> <br>
-                        <input type="radio" name="16-famasalt" id="16-famasalt" value="1" checked><label for="16-famasalt">1 - NUNCA</label> <br>
-                        <input type="radio" name="16-famasalt" id="16-famasalt" value="2"><label for="16-famasalt">2 - POCAS VECES</label> <br>
-                        <input type="radio" name="16-famasalt" id="16-famasalt" value="3"><label for="16-famasalt">3 - A VECES</label> <br>
+                        <input type="radio" name="16-famasalt" id="16-famasalt" value="1" checked><label for="16-famasalt">1 - SI</label> <br>
+                        <input type="radio" name="16-famasalt" id="16-famasalt" value="2"><label for="16-famasalt">2 - NO</label> <br> <br>
+                        <!-- <input type="radio" name="16-famasalt" id="16-famasalt" value="3"><label for="16-famasalt">3 - A VECES</label> <br>
                         <input type="radio" name="16-famasalt" id="16-famasalt" value="4"><label for="16-famasalt">4 - MUCHAS VECES</label> <br>
-                        <input type="radio" name="16-famasalt" id="16-famasalt" value="5"><label for="16-famasalt">5 - SIEMPRE</label> <br> <br>
+                        <input type="radio" name="16-famasalt" id="16-famasalt" value="5"><label for="16-famasalt">5 - SIEMPRE</label> <br> <br> -->
                         <!-- pregunta 17 -->
                         <label for="17-famsecuest">17. ¿Alguno de tus familiares ha sido secuestrado?</label> <br> <br>
-                        <input type="radio" name="17-famsecuest" id="17-famsecuest" value="1" checked><label for="17-famsecuest">1 - NUNCA</label> <br>
-                        <input type="radio" name="17-famsecuest" id="17-famsecuest" value="2"><label for="17-famsecuest">2 - POCAS VECES</label> <br>
-                        <input type="radio" name="17-famsecuest" id="17-famsecuest" value="3"><label for="17-famsecuest">3 - A VECES</label> <br>
+                        <input type="radio" name="17-famsecuest" id="17-famsecuest" value="1" checked><label for="17-famsecuest">1 - SI</label> <br>
+                        <input type="radio" name="17-famsecuest" id="17-famsecuest" value="2"><label for="17-famsecuest">2 - NO</label> <br> <br>
+                        <!-- <input type="radio" name="17-famsecuest" id="17-famsecuest" value="3"><label for="17-famsecuest">3 - A VECES</label> <br>
                         <input type="radio" name="17-famsecuest" id="17-famsecuest" value="4"><label for="17-famsecuest">4 - MUCHAS VECES</label> <br>
-                        <input type="radio" name="17-famsecuest" id="17-famsecuest" value="5"><label for="17-famsecuest">5 - SIEMPRE</label> <br> <br>
+                        <input type="radio" name="17-famsecuest" id="17-famsecuest" value="5"><label for="17-famsecuest">5 - SIEMPRE</label> <br> <br> -->
+                        <!-- pregunta 18 -->
+                        <label for="18-tusecuest">18. ¿Has sido asaltado o secuestrado?</label> <br> <br>
+                        <input type="radio" name="18-tusecuest" id="18-tusecuest" value="1" checked><label for="18-tusecuest">1 - SI</label> <br>
+                        <input type="radio" name="18-tusecuest" id="18-tusecuest" value="2"><label for="18-tusecuest">2 - NO</label> <br> <br>
+                        <!-- pregunta 19 -->
+                        <label for="19-forzadrogas">19. ¿Te han forzado a ingerir bebidas alcoholicas, drogas o alguna sustancia dañina?</label> <br> <br>
+                        <input type="radio" name="19-forzadrogas" id="19-forzadrogas" value="1" checked><label for="19-forzadrogas">1 - SI</label> <br>
+                        <input type="radio" name="19-forzadrogas" id="19-forzadrogas" value="2"><label for="19-forzadrogas">2 - NO</label> <br> <br>
 
                         <hr>
                         <!-- aqui termina la segunda parte del formulario -->
@@ -295,7 +304,89 @@
                         <!-- tercera parte del formulario -->
                         <h3>RIESGO SUICIDA - DESEPERANZA</h3>
                         <p id="legenda">Responde a cada pregunta según se aplique a tu condición actual</p>
+                        <!-- pregunta 20 -->
+                        <label for="20-esperanza">20. Espero el futuro con esperanza y entusiasmo</label> <br> <br>
+                        <input type="radio" name="20-esperanza" id="20-esperanza" value="0" checked><label for="20-esperanza">1 - VERDADERO</label> <br>
+                        <input type="radio" name="20-esperanza" id="20-esperanza" value="1"><label for="20-esperanza">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 21 -->
+                        <label for="21-vencido">21. Puedo darme por vencido, renunciar, ya que no puedo hacer mejor las cosas por mí mismo</label> <br> <br>
+                        <input type="radio" name="21-vencido" id="21-vencido" value="1" checked><label for="21-vencido">1 - VERDADERO</label> <br>
+                        <input type="radio" name="21-vencido" id="21-vencido" value="0"><label for="21-vencido">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 22 -->
+                        <label for="22-mal">22. Cuando las cosas van mal me alivia saber que las cosas no pueden permanecer tiempo así</label> <br> <br>
+                        <input type="radio" name="22-mal" id="22-mal" value="0" checked><label for="22-mal">1 - VERDADERO</label> <br>
+                        <input type="radio" name="22-mal" id="22-mal" value="1"><label for="22-mal">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 23 -->
+                        <label for="23-vida">23. No puedo imaginar como será mi vida dentro de  años</label> <br> <br>
+                        <input type="radio" name="23-vida" id="23-vida" value="1" checked><label for="23-vida">1 - VERDADERO</label> <br>
+                        <input type="radio" name="23-vida" id="23-vida" value="0"><label for="23-vida">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 24 -->
+                        <label for="24-tiempo">24. Tengo bastante tiempo para llevar a cabo las cosas que quisiera poder hacer</label> <br> <br>
+                        <input type="radio" name="24-tiempo" id="24-tiempo" value="0" checked><label for="24-tiempo">1 - VERDADERO</label> <br>
+                        <input type="radio" name="24-tiempo" id="24-tiempo" value="1"><label for="24-tiempo">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 25 -->
+                        <label for="25-futuro">25. En el futuro, espero conseguir lo que me pueda interesar</label> <br> <br>
+                        <input type="radio" name="25-futuro" id="25-futuro" value="0" checked><label for="25-futuro">1 - VERDADERO</label> <br>
+                        <input type="radio" name="25-futuro" id="25-futuro" value="1"><label for="25-futuro">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 26 -->
+                        <label for="26-oscuro">26. Mi futuro me parece oscuro</label> <br> <br>
+                        <input type="radio" name="26-oscuro" id="26-oscuro" value="1" checked><label for="26-oscuro">1 - VERDADERO</label> <br>
+                        <input type="radio" name="26-oscuro" id="26-oscuro" value="0"><label for="26-oscuro">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 27 -->
+                        <label for="27-buenas">27. Espero más cosas buenas de la vida que lo que la gente suele conseguir por término medio</label> <br> <br>
+                        <input type="radio" name="27-buenas" id="27-buenas" value="0" checked><label for="27-buenas">1 - VERDADERO</label> <br>
+                        <input type="radio" name="27-buenas" id="27-buenas" value="1"><label for="27-buenas">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 28 -->
+                        <label for="28-cambios">28. No logro hacer que las cosas cambien, y no existen razones para creer que pueda en el futuro</label> <br> <br>
+                        <input type="radio" name="28-cambio" id="28-cambio" value="1" checked><label for="28-cambio">1 - VERDADERO</label> <br>
+                        <input type="radio" name="28-cambio" id="28-cambio" value="0"><label for="28-cambio">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 29 -->
+                        <label for="29-experiencias">29. Mis pasadas experiencias me han preparado bien para mi futuro</label> <br> <br>
+                        <input type="radio" name="29-experiencias" id="29-experiencias" value="0" checked><label for="29-experiencias">1 - VERDADERO</label> <br>
+                        <input type="radio" name="29-experiencias" id="29-experiencias" value="1"><label for="29-experiencias">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 30 -->
+                        <label for="30-desagradable">30. Todo lo que puedo ver por delante de mí es más desagradable que agradable</label> <br> <br>
+                        <input type="radio" name="30-desagradable" id="30-desagradable" value="1" checked><label for="30-desagradable">1 - VERDADERO</label> <br>
+                        <input type="radio" name="30-desagradable" id="30-desagradable" value="0"><label for="30-desagradable">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 31 -->
+                        <label for="31-deseo">31. No espero conseguir lo que realmente deseo</label> <br> <br>
+                        <input type="radio" name="31-deseo" id="31-deseo" value="1" checked><label for="31-deseo">1 - VERDADERO</label> <br>
+                        <input type="radio" name="31-deseo" id="31-deseo" value="0"><label for="31-deseo">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 32 -->
+                        <label for="32-futuro">32.  Cuando miro hacia el futuro, espero que seré más feliz de lo que soy ahora</label> <br> <br>
+                        <input type="radio" name="32-futuro" id="32-futuro" value="0" checked><label for="32-futuro">1 - VERDADERO</label> <br>
+                        <input type="radio" name="32-futuro" id="32-futuro" value="1"><label for="32-futuro">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 33 -->
+                        <label for="33-marcha">33. Las cosas no marchan como yo quisiera</label> <br> <br>
+                        <input type="radio" name="33-marcha" id="33-marcha" value="1" checked><label for="33-marcha">1 - VERDADERO</label> <br>
+                        <input type="radio" name="33-marcha" id="33-marcha" value="0"><label for="33-marcha">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 34 -->
+                        <label for="34-confianza">34. Tengo una gran confianza en el futuro</label> <br> <br>
+                        <input type="radio" name="34-confianza" id="34-confianza" value="0" checked><label for="34-confianza">1 - VERDADERO</label> <br>
+                        <input type="radio" name="34-confianza" id="34-confianza" value="1"><label for="34-confianza">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 35 -->
+                        <label for="35-absurdo">35. Nunca consigo lo que deseo, por lo que es absurdo desear cualquier cosa</label> <br> <br>
+                        <input type="radio" name="35-absurdo" id="35-absurdo" value="1" checked><label for="35-absurdo">1 - VERDADERO</label> <br>
+                        <input type="radio" name="35-absurdo" id="35-absurdo" value="0"><label for="35-absurdo">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 36 -->
+                        <label for="36-satisfaccion">36. Es muy improbable que pueda lograr una satisfacción real en el futuro</label> <br> <br>
+                        <input type="radio" name="36-satisfaccion" id="36-satisfaccion" value="1" checked><label for="36-satisfaccion">1 - VERDADERO</label> <br>
+                        <input type="radio" name="36-satisfaccion" id="36-satisfaccion" value="0"><label for="36-satisfaccion">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 37 -->
+                        <label for="37-vago">37. El futuro me parece vago e incierto</label> <br> <br>
+                        <input type="radio" name="37-vago" id="37-vago" value="1" checked><label for="37-vago">1 - VERDADERO</label> <br>
+                        <input type="radio" name="37-vago" id="37-vago" value="0"><label for="37-vago">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 38 -->
+                        <label for="38-epocas">38. Espero más bien épocas buenas que malas</label> <br> <br>
+                        <input type="radio" name="38-epocas" id="38-epocas" value="0" checked><label for="38-epocas">1 - VERDADERO</label> <br>
+                        <input type="radio" name="38-epocas" id="38-epocas" value="1"><label for="38-epocas">2 - FALSO</label> <br> <br>
+                        <!-- pregunta 39 -->
+                        <label for="39-logro">39. No merece la pena que intente conseguir algo que desee, porque probablemente no lo lograré</label> <br> <br>
+                        <input type="radio" name="39-logro" id="39-logro" value="1" checked><label for="39-logro">1 - VERDADERO</label> <br>
+                        <input type="radio" name="39-logro" id="39-logro" value="0"><label for="39-logro">2 - FALSO</label> <br> <br>
+
                         <hr>
+                        <!-- aqui termina la tercera parte del formulario -->
                     </form>
                 </fieldset>
             </article>
@@ -303,6 +394,41 @@
 
             </article>
             <article class="saludsex">
+                
+            </article>
+        </section>
+    </div>
+
+    
+    <!-- aqui va el footer -->
+    <footer>
+        <div class="container-footer">
+            <div class="columna1">
+                <p id="creditos">Créditos</p>
+                <div class="columna1-content">
+                    <p class="pes">PES 2.0</p>                    
+                    <p class="columna1-texto">
+                        Instrumento desarrollado por colaboradores del programa Universidad Saludable con el apoyo del <b>Depto. de Redes y Telecomunicaciones.</b>
+                    </p>
+                    <p class="columna1-texto">
+                        Universidad Autónoma de Aguascalientes. 2015.
+                    </p>    
+                </div>
+            </div>
+            <div class="columna2">                
+                <p id="recursos" class="margin-columna2">Recursos</p>
+                <a href="#" class="margin-columna2">🌐Alumnos de nuevo ingreso: Manual de uso</a>                  
+                <p class="margin-columna2">Contacto</p>                    
+                <p class="infouaa-columna2">    
+                    Universidad Saludable: Unidad Médico Didáctica (Edif. 101). Planta Alta.
+                    <br>
+                    Teléfono: 9107400 ext. 53513 y 53514.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
                 
             </article>
         </section>
