@@ -10,8 +10,9 @@
 <body>
     <div class="contenedor">
         <h1 id="titulo-pes">P.E.S.</h1>
+        <!-- MENU DE NAVEGACION -->
+        
         <section class="encuestas">
-
             <!-- aqui empieza salud física -->
             <article class="saludfisica">
                 <fieldset>
@@ -133,24 +134,24 @@
                         <label for="">13. ¿Con que frecuencia acudes al médico?</label>
                         <select name="" id="">
                             <option value="0" selected>Seleccione una opción</option>
-                            <option value="">1 vez por año</option>
-                            <option value="">2 vez por año</option>
-                            <option value="">3 vez por año</option>
-                            <option value="">Cada que te enfermas</option>
-                            <option value="">Nunca</option>
+                            <option value="1">1 vez por año</option>
+                            <option value="2">2 vez por año</option>
+                            <option value="3">3 vez por año</option>
+                            <option value="4">Cada que te enfermas</option>
+                            <option value="5">Nunca</option>
                         </select>
                         <!-- pregunta 14 -->
-                        <label for="">14. ¿Realizas alguna actividad cultural o artística?</label> <br>
+                        <label for="cultur-si">14. ¿Realizas alguna actividad cultural o artística?</label> <br>
                         <input type="radio" name="cultur-si" id="cultur-si" class="ejer-sino" checked>
-                        <label for="si">Si</label> <br>
-                        <input type="radio" name="cultur-no" id="cultur-no" class="ejer-sino">
-                        <label for="no">No</label> <br>
+                        <label for="cultur-si">Si</label> <br>
+                        <input type="radio" name="cultur-si" id="cultur-si" class="ejer-sino">
+                        <label for="cultur-si">No</label> <br>
                         <!-- pregunta 15 -->
-                        <label for="">15. ¿Acostumbras leer diariamente?</label> <br>
-                        <input type="radio" name="cultur-si" id="cultur-si" class="ejer-sino" checked>
-                        <label for="si">Si</label> <br>
-                        <input type="radio" name="cultur-no" id="cultur-no" class="ejer-sino">
-                        <label for="no">No</label> <br>
+                        <label for="cultur-sin">15. ¿Acostumbras leer diariamente?</label> <br>
+                        <input type="radio" name="cultur-sin" id="cultur-sin" class="ejer-sino" checked>
+                        <label for="cultur-sin">Si</label> <br>
+                        <input type="radio" name="cultur-sin" id="cultur-sin" class="ejer-sino">
+                        <label for="cultur-sin">No</label> <br>
                     </form>
                 </fieldset>
             </article> <br>
@@ -693,8 +694,57 @@
 
             </article>
             <!-- aqui termina CONSUMO DE SUSTANCIAS -->
+
+            <!-- AQUI COMIENZA SALUD SEXUAL -->
             <article class="saludsex">
-                
+                <fieldset>
+                    <legend>SALUD SEXUAL</legend>
+                    <form action="#">
+                        <h3>SALUD SEXUAL</h3>
+                        <p id="legenda">Responde a cada pregunta según se aplique a tu condición actual</p>
+                        <!-- pregunta 1 -->
+                        <h4><label for="sex1">1. ¿Has tenido relaciones sexuales?</label></h4>
+                        <input type="radio" name="sex1" id="sex1" value="0"><label for="sex1"> NO</label> <br> <br>
+                        <input type="radio" name="sex1" id="sex1" value="1"><label for="sex1"> SI</label> <br><br>
+                        <!-- SI PONE QUE NO FINALIZA LA ENCUESTA -->
+                        <!-- pregunta 2 -->
+                        <h4><label for="sex2">2. ¿Has tenido sexo de alto riesgo (bajo el influjo del alcohol u otra droga, servidores (as) sexuales, más de una pareja en un mismo acto)?</label></h4>
+                        <input type="radio" name="sex2" id="sex2" value="0"><label for="sex2"> NO</label> <br> <br>
+                        <input type="radio" name="sex2" id="sex2" value="1"><label for="sex2"> SI</label> <br><br>
+                        <!-- pregunta 3 -->
+                        <h4><label for="sex3">3. ¿Has tenido sexo sin protección?</label></h4>
+                        <input type="radio" name="sex3" id="sex3" value="0"><label for="sex3"> NO</label> <br> <br>
+                        <input type="radio" name="sex3" id="sex3" value="1"><label for="sex3"> SI</label> <br><br>
+                        <!-- pregunta 4 -->
+                        <h4><label for="sex4">4. ¿Tú o tu pareja han tenido un embarazo no planeado?</label></h4>
+                        <input type="radio" name="sex4" id="sex4" value="0"><label for="sex4"> NO</label> <br> <br>
+                        <input type="radio" name="sex4" id="sex4" value="1"><label for="sex4"> SI</label> <br><br>
+                        <!-- pregunta 5 -->
+                        <h4><label for="sex5">5. ¿Has usado algun metodo anticonceptivo? </label></h4>
+                        <input type="radio" name="sex5" id="sex5" value="0"><label for="sex5"> NO</label> <br> <br>
+                        <input type="radio" name="sex5" id="sex5" value="1"><label for="sex5"> SI</label> <br><br>
+                        <!-- pregunta 6 -->
+                        <h4><label for="sex6">6. ¿Tú o tu pareja han  tenido algún aborto?</label></h4>
+                        <input type="radio" name="sex6" id="sex6" value="0"><label for="sex6"> NO</label> <br> <br>
+                        <input type="radio" name="sex6" id="sex6" value="1"><label for="sex6"> SI</label> <br><br>
+                        <!-- pregunta 7 -->
+                        <h4><label for="sex7">7. ¿Has tenido Enfermedades de Transmisión Sexual?</label></h4>
+                        <input type="radio" name="sex7" id="sex7" value="0"><label for="sex7"> NO</label> <br> <br>
+                        <input type="radio" name="sex7" id="sex7" value="1"><label for="sex7"> SI</label> <br><br>
+                        <!-- pregunta 8 -->
+                        <h4><label for="sex8">8. ¿Te has realizado pruebas de deteccion de Enfermedades de Transmisión Sexual?</label></h4>
+                        <input type="radio" name="sex8" id="sex8" value="0"><label for="sex8"> NO</label> <br> <br>
+                        <input type="radio" name="sex8" id="sex8" value="1"><label for="sex8"> SI</label> <br><br>
+                        <!-- pregunta 9 -->
+                        <h4><label for="sex9">9. ¿Has asistido a alguna consulta sobre tu salud sexual y reproductiva?</label></h4>
+                        <input type="radio" name="sex9" id="sex9" value="0"><label for="sex9"> NO</label> <br> <br>
+                        <input type="radio" name="sex9" id="sex9" value="1"><label for="sex9"> SI</label> <br><br>
+                        <!-- pregunta 10 -->
+                        <h4><label for="sex10">10. ¿Realizas las acciones preventivas para tu salud sexual (papanicolau, exploración de mamas, exploración testicular, examen prostático, etc.)?</label></h4>
+                        <input type="radio" name="sex10" id="sex10" value="0"><label for="sex10"> NO</label> <br> <br>
+                        <input type="radio" name="sex10" id="sex10" value="1"><label for="sex10"> SI</label> <br><br>
+                    </form>
+                </fieldset>
             </article>
         </section>
     </div>
