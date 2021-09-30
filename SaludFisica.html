@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>PES - Salud Fisica</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1 id="titulo-pes">P.E.S.</h1>
+        <section class="encuestas">
+            <article class="saludfisica">
+                <fieldset>
+                    <legend>SALUD FÍSICA</legend>
+                    <!-- primera pregunta -->
+                    <form action="#">
+                        <h3>ALIMENTACIÓN</h3>
+                        <p id="legenda">Responde a cada pregunta según se aplique a tu condición actual</p>
+                        <label for="alimentacionsaludable">1. ¿Crees que tu alimentación es saludable?</label>
+                        <select id="alimentacionsaludable">
+                            <option value="0" selected>Seleccione una opción</option>
+                            <option value="siempre">Siempre</option>
+                            <option value="aveces">A veces</option>
+                            <option value="pocasvec">Pocas Veces</option>
+                            <option value="nunca">Nunca</option>
+                        </select>
+                        <!-- segunda pregunta -->
+                        <label for="">2. ¿Mantienes un consumo bajo en grasas?</label>
+                        <select id="">
+                            <option value="0" selected>Seleccione una opción</option>
+                            <option value="siempre">Siempre</option>
+                            <option value="aveces">A veces</option>
+                            <option value="pocasvec">Pocas Veces</option>
+                            <option value="nunca">Nunca</option>
+                        </select>
+                        <!-- tercer pregunta -->
+                        <label for="">3. ¿Comes vegetales frescos diariamente?</label>
+                        <select id="">
+                            <option value="0" selected>Seleccione una opción</option>
+                            <option value="siempre">Siempre</option>
+                            <option value="aveces">A veces</option>
+                            <option value="pocasvec">Pocas Veces</option>
+                            <option value="nunca">Nunca</option>
+                        </select>
+                        <!-- cuarta pregunta -->
+                        <label for="">4. ¿Comes de forma saludable aún cuando lo hagas fuera de casa?</label>
+                        <select id="">
+                            <option value="0" selected>Seleccione una opción</option>
+                            <option value="siempre">Siempre</option>
+                            <option value="aveces">A veces</option>
+                            <option value="pocasvec">Pocas Veces</option>
+                            <option value="nunca">Nunca</option>
+                        </select>
+                        <!-- quinta pregunta -->
+                        <label for="">5. ¿Comes alimentos hervidos o asados en lugar de fritos?</label>
+                        <select id="">
+                            <option value="0" selected>Seleccione una opción</option>
+                            <option value="siempre">Siempre</option>
+                            <option value="aveces">A veces</option>
+                            <option value="pocasvec">Pocas Veces</option>
+                            <option value="nunca">Nunca</option>
+                        </select>
+                        <!-- sexta pregunta -->
+                        <label for="">6. ¿Mantienes un consumo bajo en sal?</label>
+                        <select name="" id="">
+                            <option value="0" selected>Seleccione una opción</option>
+                            <option value="siempre">Siempre</option>
+                            <option value="aveces">A veces</option>
+                            <option value="pocasvec">Pocas Veces</option>
+                            <option value="nunca">Nunca</option>
+                        </select>
+                        <!-- septima pregunta -->
+                        <label for="">7. ¿Sustituyes el desayuno, la comida o la cena por alguna botana?</label>
+                        <select name="" id="">
+                            <option value="0" selected>Seleccione una opción</option>
+                            <option value="casisiempre">La mayor parte del tiempo</option>
+                            <option value="pocasvec">Pocas Veces</option>
+                            <option value="casinunca">Casi Nunca</option>
+                        </select>
+                        <!-- octava pregunta -->
+                        <label for="">8. ¿Con que frecuencia no desayunas?</label>
+                        <select name="" id="">
+                            <option value="0" selected>Seleccione una opción</option>
+                            <option value="casisiempre">La mayoría de las mañanas</option>
+                            <option value="pocasvec">Algunas mañanas</option>
+                            <option value="casinunca">Casi Nunca</option>
+                        </select>
+                        <hr>
+                        <!-- segunda sección de salud fisica, estilo de vida -->
+                        <h3>ESTILO DE VIDA</h3>
+                        <p id="legenda">Responde a cada pregunta según se aplique a tu condición actual</p>
+                        <!-- pregunta 9 -->
+                        <label for="">9. ¿Realizas ejercicio que dure mínimo 30 minutos y te haga sudar, cuando menos 3 veces a la semana?</label><br>
+                        <input type="radio" name="" id="ejer-si" class="ejer-sino" checked>
+                        <label for="si">Si</label> <br>
+                        <input type="radio" name="" id="ejer-no" class="ejer-sino">
+                        <label for="no">No</label> <br>
+                        <!-- pregunta 10 -->
+                        <label for="">10. ¿Cuántas horas a la semana dedicas a hacer ejercicio?</label>
+                        <select name="" id="">
+                            <option value="0" selected>Seleccione una opción</option>
+                            <option value="0nada">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5mas">5 o más</option>
+                        </select>
+                        <!-- pregunta 11 -->
+                        <label for="">11.¿Qué tipo de ejercicios realizas?</label> <br>
+                        <input type="checkbox" name="aerobics" id="ejerhaces">
+                        <label for="">Aerobics</label> <br>
+                        <input type="checkbox" name="bailar" id="ejerhaces">
+                        <label for="">Bailar</label> <br>
+                        <input type="checkbox" name="correr" id="ejerhaces">
+                        <label for="">Correr</label> <br>
+                        <input type="checkbox" name="nadar" id="ejerhaces">
+                        <label for="">Nadar</label> <br>
+                        <input type="checkbox" name="futbol" id="ejerhaces">
+                        <label for="">Futbol</label> <br>
+                        <input type="checkbox" name="gym" id="ejerhaces">
+                        <label for="">Gimnasio</label> <br>
+                        <input type="checkbox" name="otrosky" id="ejerhaces" checked>
+                        <label for="">Otro</label> <br>
+                        <!-- pregunta 12 -->
+                        <label for="">12. Al terminar  tus actividades académicas, laborales y familiares: ¿Cuántas horas al día te quedan libres?</label> <br>
+                        <input type="number" name="horaslibres" id="horaslibres" value="0" max="9" min="0"> <br>
+                        <!-- pregunta 13 -->
+                        <label for="">13. ¿Con que frecuencia acudes al médico?</label>
+                        <select name="" id="">
+                            <option value="0" selected>Seleccione una opción</option>
+                            <option value="">1 vez por año</option>
+                            <option value="">2 vez por año</option>
+                            <option value="">3 vez por año</option>
+                            <option value="">Cada que te enfermas</option>
+                            <option value="">Nunca</option>
+                        </select>
+                        <!-- pregunta 14 -->
+                        <label for="">14. ¿Realizas alguna actividad cultural o artística?</label> <br>
+                        <input type="radio" name="cultur-si" id="cultur-si" class="ejer-sino" checked>
+                        <label for="si">Si</label> <br>
+                        <input type="radio" name="cultur-no" id="cultur-no" class="ejer-sino">
+                        <label for="no">No</label> <br>
+                        <!-- pregunta 15 -->
+                        <label for="">15. ¿Acostumbras leer diariamente?</label> <br>
+                        <input type="radio" name="cultur-si" id="cultur-si" class="ejer-sino" checked>
+                        <label for="si">Si</label> <br>
+                        <input type="radio" name="cultur-no" id="cultur-no" class="ejer-sino">
+                        <label for="no">No</label> <br>
+                    </form>
+                </fieldset>
+            </article> <br>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+            <div class="columna1">
+                <p id="creditos">Créditos</p>
+                <div class="columna1-content">
+                    <p class="pes">PES 2.0</p>                    
+                    <p class="columna1-texto">
+                        Instrumento desarrollado por colaboradores del programa Universidad Saludable con el apoyo del <b>Depto. de Redes y Telecomunicaciones.</b>
+                    </p>
+                    <p class="columna1-texto">
+                        Universidad Autónoma de Aguascalientes. 2015.
+                    </p>    
+                </div>
+            </div>
+            <div class="columna2">                
+                <p id="recursos" class="margin-columna2">Recursos</p>
+                <a href="#" class="margin-columna2">🌐Alumnos de nuevo ingreso: Manual de uso</a>                  
+                <p class="margin-columna2">Contacto</p>                    
+                <p class="infouaa-columna2">    
+                    Universidad Saludable: Unidad Médico Didáctica (Edif. 101). Planta Alta.
+                    <br>
+                    Teléfono: 9107400 ext. 53513 y 53514.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
