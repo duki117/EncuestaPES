@@ -16,20 +16,67 @@ rgba(148,187,233,0.6301075268817204) 100%);
   /* background-color: ; */
 }
 
-#titulo-pes {
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #22336a;
+
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+@media (max-width: 700px) {
+  .navbar {   
+    flex-direction: column;
+    /* width: 100vw; */
+  }
+}
+
+/* Esto no sirve */
+/* para que funcione borrar la "o" de "peso" */
+#titulo-peso {
   /* background-color: aliceblue; */
-  background-color: rgba(127, 255, 212, 0.431);
-  border-radius: 10px;
+  background-color: rgba(15, 13, 133, 0.9);
+  border-radius: 20px;
+  padding: 15px;
   /* font-family: 'Bebas Neue', cursive; */
   /* font-family: 'Julius Sans One', sans-serif; */
   font-size: 200%;
+  color: white;
 }
+/* aqui para lo inservible, no borrar */
 
 .contenedor {
   margin-bottom: 15px;
   width: 70%;
   margin: 0 auto;
-  background-color: rgba(33, 19, 161, 0.185);
+  /* background-color: rgba(33, 19, 161, 0.185); */
+  border-radius: 10px;
+}
+
+.saludsex, .consumsust, .saludpsico, .saludfisica {
+  background-color: rgba(105, 41, 223, 0.18);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
   border-radius: 10px;
 }
 
@@ -45,6 +92,7 @@ h1 {
 
 fieldset {
   border-radius: 7px;
+  border: 1.5px solid black;
 }
 
 h3 {
