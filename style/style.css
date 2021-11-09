@@ -16,12 +16,41 @@ rgba(148,187,233,0.6301075268817204) 100%);
   /* background-color: ; */
 }
 
-.header {
+.ir-arriba {
+	display:none;
+	padding:15px;
+	background:#024959;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+  border-radius: 10px;
+}
+
+/* .header {
   padding: 30px;
   text-align: center;
   background: #22336a;
 
   color: white;
+} */
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #8697cf;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  font-size: 15pt;
 }
 
 .navbar {
@@ -65,11 +94,30 @@ rgba(148,187,233,0.6301075268817204) 100%);
 /* aqui para lo inservible, no borrar */
 
 .contenedor {
-  margin-bottom: 15px;
+  /* margin-bottom: 15px;
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto; */
   /* background-color: rgba(33, 19, 161, 0.185); */
+  /* border-radius: 10px; */
+}
+
+.aviso-priv {
+  width: 30%;
+  padding: 7.5px;
   border-radius: 10px;
+  /* border: 0; */
+  background-color: rgb(182, 174, 255);
+  text-transform: uppercase;
+  cursor:pointer;
+  z-index:unset;
+}
+
+.aviso-priv:hover {
+  transform: scale(1.03);
+  background-color: rgb(57, 179, 236);
+  color: white;
+  z-index:unset;
+
 }
 
 .saludsex, .consumsust, .saludpsico, .saludfisica {
